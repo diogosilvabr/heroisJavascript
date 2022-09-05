@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Heróis</title>
+	</head>
+<body>
+	
+	<script language="javascript">
+
+        var universo = prompt("Digite o universo \n Marvel ou DC");
+        var heroi = prompt("Escolha um herói do universo escolhido:");
+        var qtdeHerois = prompt("Quantas vezes você deseja visualizar?");
+
+            if(universo == "Marvel") {
+                if(heroi == 'thor' || heroi == 'hulk' || heroi =='homemaranha') {
+                    for(i=0;i<qtdeHerois;i++) {
+                        document.write(`<br><img src='img/${heroi}.png' width='200'>`);
+                            }} else {
+                                alert('Esse herói não pertence ou não existe no universo Marvel!');
+                            }
+            } else {
+                alert('UNIVERSO INVÁLIDO:');
+            }
+            
+            if(universo == "DC") {
+                if(heroi == 'superman' || heroi ==  'flash' || heroi ==  'batman') {
+                    for(i=0;i<qtdeHerois;i++) {
+                        document.write(`<br><img src='img/${heroi}.png' width='200'>`);
+                            }} else {
+                                alert('Esse herói não pertence ou não existe no universo DC');
+                            }
+            } else {
+                alert('UNIVERSO INVÁLIDO');
+            }
+   
+
+	</script>
+
+</body>
+</html>
